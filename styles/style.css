@@ -552,7 +552,6 @@ button:disabled {
   .section__block-text_two-columns {
     display: grid;
     gap: 0 20px;
-    grid-template-columns: min(236px) min(432px);
     grid-template-columns: minmax(257px, auto) minmax(432px, max-content);
   }
 
