@@ -4,9 +4,40 @@
   переключая тему
 */
 
-.page.theme_dark {
+.page .theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --nav-color: #ff0070;
+  --decore-elements: #ff0070;
+  --main-font: 'IBM Plex mono';
+  --text-color: #f1b2ce;
+  --bg-color: #000028;
+  --accent-color: #ff0070;
+  --decore-color: #db00ff;
+  --header-image: url(../images/cover-image-dark.png);
+  --header-decore-text: #ff0070;
+  --section-main-title: #ff0070;
+  --heading-text-color: #000028;
+  --header-title-color: #ff0070;
+  --outline-opacity: rgba(255, 0, 112, 0.4);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --nav-color: #ff0070;
+    --decore-elements: #ff0070;
+    --main-font: 'IBM Plex mono';
+    --text-color: #f1b2ce;
+    --bg-color: #000028;
+    --accent-color: #ff0070;
+    --decore-color: #db00ff;
+    --header-image: url(../images/cover-image-dark.png);
+    --header-decore-text: #ff0070;
+    --section-main-title: #ff0070;
+    --heading-text-color: #000028;
+    --header-title-color: #ff0070;
+    --outline-opacity: rgba(255, 0, 112, 0.4);
+  }
 }
