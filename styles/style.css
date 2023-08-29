@@ -17,11 +17,6 @@ button:focus {
   outline: none;
 }
 
-a:focus-visible,
-button:focus-visible {
-  /*outline: 1px solid currentColor;*/
-}
-
 button:disabled {
   pointer-events: none;
 }
@@ -43,7 +38,6 @@ button:disabled {
 
 .header__theme-menu-button:focus {
   border-block-end: 1px solid var(--nav-color);
-  outline: none;
 }
 
 .header__theme-menu-button_active {
@@ -53,12 +47,10 @@ button:disabled {
 
 .content__paragraph a:hover {
   border-block-end: 1px solid var(--text-color);
-  outline: none;
 }
 
 .content__paragraph a:focus {
   border: 1px solid var(--text-color);
-  outline: none;
 }
 /*----------------------------------------------------------------HEADER*/
 .header {
@@ -97,7 +89,7 @@ button:disabled {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   line-height: 82.5%;
-  padding-block: 69px 54px;
+  padding-block: 64px 54px;
 }
 
 .title-decor {
@@ -113,7 +105,7 @@ button:disabled {
 }
 
 .decorated-text {
-  color: var(--header-decore-text);
+  color: var(--accent-color);
   font-size: 18px;
   line-height: 25px; /* 138.889% */
   position: absolute;
@@ -127,12 +119,16 @@ button:disabled {
   content: '';
   inline-size: 9px;
   block-size: 9px;
-  background-color: var(--header-decore-text);
+  background-color: var(--accent-color);
   border-radius: 50%;
   position: relative;
   inset-inline-end: -11px;
   inset-block-start: 9px;
-  box-shadow: 0px 0px 4px 1px var(--header-decore-text);
+  box-shadow: 0px 0px 4px 1px var(--accent-color);
+}
+
+.theme_light div.decorated-text {
+  display: none;
 }
 
 .header__theme-menu {
@@ -149,7 +145,7 @@ button:disabled {
 
 .header__theme-menu-list {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   flex-direction: column;
 }
 
@@ -300,6 +296,7 @@ button:disabled {
   }
   /*----------------------------------------------------------------HEADER*/
   .header {
+    width: 100%;
     position: relative;
     /*display: grid;*/
     /*grid-auto-rows: 1fr auto 1fr;*/
@@ -321,7 +318,7 @@ button:disabled {
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin-inline-start: -20px;
-    padding-block: 176px 160px;
+    padding-block: 173px 161px;
   }
 
   .decorated-zone {
@@ -342,7 +339,7 @@ button:disabled {
 
   .header__theme-menu-list {
     display: flex;
-    gap: 16px;
+    gap: 10px;
     flex-direction: column;
   }
 
@@ -453,7 +450,7 @@ button:disabled {
   }
 
   .footer__title {
-    padding-block: 454px;
+    padding-block: 452px;
   }
 
   .footer::before {
@@ -626,7 +623,7 @@ button:disabled {
 
   .footer__title {
     font-size: clamp(9.8125rem, 9.8125rem + 0vw, 9.8125rem);
-    padding-block: 310px;
+    padding-block: 309px;
   }
 
   .footer::before {

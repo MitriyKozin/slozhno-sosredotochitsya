@@ -17,11 +17,10 @@
   --accent-color: #ff0070;
   --decore-color: #db00ff;
   --header-image: url(../images/cover-image-dark.png);
-  --header-decore-text: #ff0070;
   --section-main-title: #ff0070;
   --heading-text-color: #000028;
   --header-title-color: #ff0070;
-  --outline-opacity: rgba(255, 0, 112, 0.4);
+  --outline-opacity: #ff007066;/*rgba(255, 0, 112, 0.4);*/
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,10 +33,9 @@
     --accent-color: #ff0070;
     --decore-color: #db00ff;
     --header-image: url(../images/cover-image-dark.png);
-    --header-decore-text: #ff0070;
     --section-main-title: #ff0070;
     --heading-text-color: #000028;
     --header-title-color: #ff0070;
-    --outline-opacity: rgba(255, 0, 112, 0.4);
+    --outline-opacity: #ff007066; /*rgba(255, 0, 112, 0.4);*/
   }
 }
