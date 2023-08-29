@@ -60,6 +60,8 @@ button:disabled {
   /*display: grid;*/
   /*grid-auto-rows: 1fr auto 1fr;*/
   padding: 10px;
+
+  height:100%;/*new*/
 }
 
 .header::before {
@@ -248,6 +250,8 @@ button:disabled {
   margin-block-start: 40px;
   position: relative;
   padding: 10px;
+
+  height:100%;/*new*/
 }
 
 .footer::before {
