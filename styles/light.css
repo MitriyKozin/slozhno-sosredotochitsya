@@ -11,7 +11,7 @@
   */
   --nav-color: #353430;
   --decore-elements: #353430;
-  --main-font: 'IBM Plex mono';
+  --main-font: 'IBM Plex mono', Arial, Helvetica, sans-serif;
   --text-color: #353430;
   --bg-color: #fff1f7;
   --accent-color: #ff8dcb;
@@ -23,11 +23,11 @@
   --outline-opacity: #35343066; /*rgba(50, 49, 45, 0.4);*/
 }
 
-@media (prefers-color-scheme: light) {
+/*@media (prefers-color-scheme: light) {
   :root {
     --nav-color: #353430;
     --decore-elements: #353430;
-    --main-font: 'IBM Plex mono';
+    --main-font: 'IBM Plex mono', Arial, Helvetica, sans-serif;
     --text-color: #353430;
     --bg-color: #fff1f7;
     --accent-color: #ff8dcb;
@@ -36,6 +36,6 @@
     --section-main-title: #353430;
     --heading-text-color: #353430;
     --header-title-color: #ffc2e6;
-    --outline-opacity: #35343066; /*rgba(50, 49, 45, 0.4);*/
+    --outline-opacity: #35343066;
   }
-}
+}*/

@@ -40,3 +40,12 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+a:focus,
+button:focus {
+  outline: none;
+}
+
+button:disabled {
+  pointer-events: none;
+}

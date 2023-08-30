@@ -6,7 +6,7 @@
 :root {
   --nav-color: #ff0070;
   --decore-elements: #ff0070;
-  --main-font: 'IBM Plex mono';
+  --main-font: 'IBM Plex mono', Arial, Helvetica, sans-serif;
   --text-color: #f1b2ce;
   --bg-color: #000028;
   --accent-color: #ff0070;
