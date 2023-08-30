@@ -526,6 +526,7 @@ body.theme_auto {
   .footer {
     margin-block-start: 60px;
 
+    padding: 20px;
     height: 100vh;
     min-height: 1024px;
   }
@@ -718,7 +719,8 @@ body.theme_auto {
   /*----------------------------------------------------------------FOOTER*/
   .footer {
     margin-block-start: 60px;
-
+   
+    padding: 20px;
     height: 100vh;
     min-height: 768px;
   }
