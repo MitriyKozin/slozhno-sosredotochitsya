@@ -21,6 +21,8 @@
   --heading-text-color: #353430;
   --header-title-color: #ffc2e6;
   --outline-opacity: #35343066; /*rgba(50, 49, 45, 0.4);*/
+  
+  --decore-tex-rec: none;
 }
 
 /*@media (prefers-color-scheme: light) {

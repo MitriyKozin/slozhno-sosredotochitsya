@@ -4,15 +4,6 @@
    outline: 1px solid rgb(43, 156, 128);
 }
 */
-body {
-  background-color: var(--bg-color, #000028);
-  font-family: var(--main-font, Arial, Helvetica, sans-serif);
-}
-
-body.theme_auto {
-  background-color: var(--bg-color, #000028);
-  font-family: var(--main-font, Arial, Helvetica, sans-serif);
-}
 
 @media (prefers-color-scheme: dark) {
   .page.theme_auto {
@@ -28,6 +19,8 @@ body.theme_auto {
     --heading-text-color: #000028;
     --header-title-color: #ff0070;
     --outline-opacity: #ff007066;
+
+    --decore-tex-rec: flex;
   }
 }
 
@@ -45,7 +38,13 @@ body.theme_auto {
     --heading-text-color: #353430;
     --header-title-color: #ffc2e6;
     --outline-opacity: #35343066;
+
+    --decore-tex-rec: none;
   }
+}
+
+.theme_auto .decorated-text {
+  display: var(--decore-tex-rec); /*none*/
 }
 
 .page {
@@ -154,7 +153,7 @@ body.theme_auto {
   font-size: 18px;
   line-height: 25px; /* 138.889% */
   position: absolute;
-  display: flex;
+  display: var(--decore-tex-rec);
   justify-content: end;
   inset-inline-end: 30px;
   inset-block-start: 10px;
@@ -164,16 +163,13 @@ body.theme_auto {
   content: '';
   inline-size: 9px;
   block-size: 9px;
+  display: var(--decore-tex-rec);
   background-color: var(--accent-color);
   border-radius: 50%;
   position: relative;
   inset-inline-end: -11px;
   inset-block-start: 9px;
   box-shadow: 0px 0px 4px 1px var(--accent-color);
-}
-
-.theme_light div.decorated-text {
-  display: none;
 }
 
 .header__theme-menu {
@@ -719,7 +715,7 @@ body.theme_auto {
   /*----------------------------------------------------------------FOOTER*/
   .footer {
     margin-block-start: 60px;
-   
+
     padding: 20px;
     height: 100vh;
     min-height: 768px;
